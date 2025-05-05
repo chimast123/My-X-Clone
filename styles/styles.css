@@ -4,8 +4,8 @@ body {
 }
 
 .sidebar-icons {
-  height: 28px;
-  width: 28px;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
 }
@@ -25,10 +25,19 @@ body {
 }
 
 .svg {
-  height: 28px;
+  height: 27px;
   width: 100%;
 }
 
 .svg-post {
+  height: 27px;
+  width: 100%;
   color: rgb(255, 255, 255);
+}
+
+.sidebar-icons-group2 {
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
