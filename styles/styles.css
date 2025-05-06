@@ -1,8 +1,12 @@
+/*CSS of the body*/
 body {
-  background-color: black;
   height: 3000px;
+  background-color: aqua;
+  font-family: Arial;
 }
 
+/*SIDEBAR*/
+/*CSS of the side bar in its entirity*/
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -13,10 +17,11 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 90px;
+  width: 100px;
   justify-content: space-between;
 }
 
+/*I grouped the sidebar into sidebar 1 and sidebar 2, sidebar2 consisting of just the profile picture div and the image*/
 .sidebar1,
 .sidebar2 {
   display: flex;
@@ -25,37 +30,7 @@ body {
   width: 100px;
 }
 
-.x-icon-div {
-  height: 48px;
-  width: 48px;
-}
-
-.svg-x {
-  height: 32px;
-  width: 100%;
-}
-
-.post-icon-div {
-  height: 35px;
-  width: 100%;
-  background-color: rgb(125, 128, 125);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 70px;
-}
-
-.group-svg-div {
-  height: 48px;
-  width: 48px;
-  margin-bottom: 3px;
-}
-
-.sidebar1-group {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-}
-
+/*This is the first X icon(the one at the top of the sidebar. It is the bigger of the two X icons.*/
 .x-icon-sidebar {
   display: flex;
   height: 50px;
@@ -63,32 +38,53 @@ body {
   justify-content: center;
 }
 
+/*These fall under sidebar 1 but consist of the home icon down to the options icon */
+.sidebar1-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+/*Also under sidebar 1 but consisting of just the post icon*/
 .post-icon-sidebar {
   display: flex;
-  height: 55px;
-  width: 55px;
+  height: 40px;
+  width: 53px;
   justify-content: center;
 }
 
-.svg {
-  height: 28px;
-  width: 100%;
-}
-
-.svg-post {
-  height: 25px;
-  width: 25px;
-  margin-left: 15px;
-  color: rgb(255, 255, 255);
-  margin-top: 5px;
-}
-
+/*The div within the X icon sidebar*/
 .x-icon-div {
   padding-top: 10px;
   height: 50px;
   width: 50px;
 }
 
+/*The div within the sidebar1 group*/
+.group-svg-div,
+.group-svg-div-home,
+.group-svg-div-notif {
+  height: 48px;
+  width: 48px;
+  margin-bottom: 3px;
+}
+
+.group-svg-div-home,
+.group-svg-div-notif {
+  position: relative;
+}
+
+/*The div within post-icon-sidebar*/
+.post-icon-div {
+  height: 32px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 70px;
+}
+
+/*The div of the profile image*/
 .pp-div {
   display: flex;
   flex-direction: column;
@@ -97,10 +93,99 @@ body {
   margin-bottom: 20px;
 }
 
+/*First of all, all icons in this project are in svg form since I copied directly as outerHTML from the actual X site.
+
+svg-x below is the actual X icon at the top of the sidebar, and the bigger of the two X icons*/
+.svg-x {
+  height: 30px;
+  width: 100%;
+}
+
+/*These are the svgs within the group svg div*/
+.svg {
+  height: 26px;
+  width: 100%;
+}
+
+/*this is the post icon svg*/
+.svg-post {
+  height: 23px;
+  width: 30px;
+  margin-left: 12px;
+  filter: invert(100%);
+  margin-top: 5px;
+}
+
+/*This is the profile image*/
 .img-pp {
   height: 40px;
   width: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 50px;
+}
+
+/*HEADER/TOP BAR*/
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 100px;
+  right: 0;
+  bottom: 675px;
+  background-color: white;
+  display: flex;
+}
+
+.for-you {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  font-weight: bold;
+  color: #536471;
+  position: relative;
+}
+
+.following,
+.man-utd,
+.entertainment,
+.software {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  font-weight: bold;
+  color: #536471;
+}
+
+/*This part of the code is for the absolute elements*/
+.abs-for-you {
+  position: absolute;
+  background-color: rgb(29, 155, 240);
+  top: 49px;
+  bottom: 0;
+  right: 10px;
+  left: 10px;
+}
+
+.home-dot {
+  position: absolute;
+  background-color: rgb(29, 155, 240);
+  top: -3px;
+  bottom: 44px;
+  right: 10px;
+  left: 31px;
+  border-radius: 20px;
+}
+
+.notif-dot {
+  position: absolute;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  top: -4px;
+  bottom: 36px;
+  right: 10px;
+  left: 22px;
+  border-radius: 20px;
+  padding-top: 2px;
+  font-size: 11px;
+  padding-left: 5px;
 }
