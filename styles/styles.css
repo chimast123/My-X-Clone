@@ -1,8 +1,10 @@
 /*CSS of the body*/
 body {
   height: 3000px;
-  background-color: aqua;
+  background-color: gray;
   font-family: Arial;
+  margin-top: 54px;
+  margin-left: 100px;
 }
 
 /*SIDEBAR*/
@@ -188,4 +190,30 @@ svg-x below is the actual X icon at the top of the sidebar, and the bigger of th
   padding-top: 2px;
   font-size: 11px;
   padding-left: 5px;
+}
+
+/*
+.body-color {
+  position: fixed;
+  top: 2000px;
+  bottom: 0;
+  left: 100px;
+  right: 0;
+  color: white;
+}
+*/
+
+.main-whats-hap {
+}
+
+.section1-pp-div {
+  padding: 10px 15px;
+  height: 40px;
+  width: 40px;
+}
+
+.whats-hap-img {
+  height: 40px;
+  width: 100%;
+  border-radius: 50px;
 }
