@@ -1,11 +1,11 @@
 /*CSS of the body*/
 body {
   height: 3000px;
-  background-color: aqua;
+  background-color: rgb(197, 197, 197);
   font-family: Arial;
   margin-top: 54px;
   margin-left: 100px;
-  border-right: 1px solid grey;
+  border-right: 1px solid gray;
 }
 
 /*SIDEBAR*/
@@ -136,7 +136,7 @@ svg-x below is the actual X icon at the top of the sidebar, and the bigger of th
   top: 0;
   left: 100px;
   right: 0;
-  bottom: 668px;
+  bottom: 650px;
   background-color: white;
   display: flex;
 }
@@ -167,10 +167,11 @@ svg-x below is the actual X icon at the top of the sidebar, and the bigger of th
 .abs-for-you {
   position: absolute;
   background-color: rgb(29, 155, 240);
-  top: 49px;
+  top: 50px;
   bottom: 0;
   right: 10px;
   left: 10px;
+  border-radius: 5px;
 }
 
 .home-dot {
@@ -216,7 +217,8 @@ svg-x below is the actual X icon at the top of the sidebar, and the bigger of th
 
 .section1-pp-div {
   display: flex;
-  padding: 10px 15px;
+  padding: 15px 15px;
+  margin-left: 3px;
   height: 40px;
   width: 40px;
 }
@@ -230,7 +232,8 @@ svg-x below is the actual X icon at the top of the sidebar, and the bigger of th
 .whats-hap {
   display: flex;
   font-size: 20px;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  margin-top: 30px;
   color: rgb(77, 77, 77);
   font-weight: 500;
 }
@@ -286,13 +289,14 @@ svg-x below is the actual X icon at the top of the sidebar, and the bigger of th
 }
 
 .post-span {
-  margin-left: 260px;
+  margin-left: 268px;
 }
 
 .can-reply {
   display: flex;
   flex: 1;
   align-items: center;
+  margin-bottom: 4px;
 }
 
 .globe-icon-div {
